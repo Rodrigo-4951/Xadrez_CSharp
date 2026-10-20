@@ -2,6 +2,7 @@
 using System.Runtime.ConstrainedExecution;
 using xadrez;
 using xadrez_console.tabuleiro;
+using xadrez_console.xadrez;
 
 namespace xadrez_console
 {
@@ -9,15 +10,13 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
-            Tabuleiro board = new Tabuleiro(8, 8);
+            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
 
-            board.colocarPeca(new Torre(Cor.Roxo, board), new Posicao(0, 0));
-            board.colocarPeca(new Torre(Cor.Roxo, board), new Posicao(0, 7));
-            board.colocarPeca(new Rei(Cor.Roxo, board), new Posicao(6, 7));
+            Console.WriteLine(pos);
 
-            Tela.imprimirTabuleiro(board);
+            Console.WriteLine(pos.toPosicao());
 
-            Console.ReadLine();
         }
     }
 }
+

@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace xadrez_console.tabuleiro
 {
-    internal class TabuleiroException
+    internal class TabuleiroException : Exception
     {
+        public TabuleiroException(string msg) : base (msg)
+        {
+        }
     }
 }
