@@ -21,6 +21,9 @@ namespace xadrez_console.tabuleiro
             this.qtMovimentos = 0;
         }
 
-
+        public void incrementarqtMovimento()
+        {
+            qtMovimentos++;
+        }
     }
 }
