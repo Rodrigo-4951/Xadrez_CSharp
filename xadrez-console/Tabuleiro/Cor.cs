@@ -8,7 +8,7 @@ namespace xadrez_console.tabuleiro
     {
     Preto,
     Branco,
-    Roxo,
+    Ciano,
     Amarelo
 
     }
