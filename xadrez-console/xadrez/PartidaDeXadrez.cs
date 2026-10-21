@@ -31,9 +31,9 @@ namespace xadrez_console.xadrez
 
         private void colocarPecas()
         {
-            Tab.colocarPeca(new Torre(Cor.Branco, Tab), new Posicao(0, 0));
-            Tab.colocarPeca(new Torre(Cor.Branco, Tab), new Posicao(0, 7));
-            Tab.colocarPeca(new Rei(Cor.Ciano, Tab), new Posicao(6, 7));
+            Tab.colocarPeca(new Torre(Cor.Branco, Tab), new Posicao(1, 1));
+            Tab.colocarPeca(new Torre(Cor.Branco, Tab), new Posicao(3, 3));
+            Tab.colocarPeca(new Rei(Cor.Ciano, Tab), new Posicao(5, 5));
         }
     }
 }

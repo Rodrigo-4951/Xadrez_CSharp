@@ -10,10 +10,16 @@ namespace xadrez_console.tabuleiro
         public int Coluna { get; set; }
 
 
-        public Posicao(int linha, int loluna)
+        public Posicao(int linha, int coluna)
         {
             Linha = linha;
-            Coluna = loluna;
+            Coluna = coluna;
+        }
+
+        public void definirValores(int linha, int coluna)
+        {
+            Linha = linha;
+            Coluna = coluna;
         }
 
         public override string ToString()
